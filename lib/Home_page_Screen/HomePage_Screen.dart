@@ -14,24 +14,30 @@ class HomepageScreen extends StatelessWidget {
             width: 20,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
-              color: Color(
+              color: const Color(
                 0xffa6d1f8,
               ),
             ),
-            child: const Icon(Icons.person,size: 30,color: Colors.blue,),
+            child: const Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.blue,
+            ),
           ),
         ),
-        actions: [
+        actions: const [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Icon(Icons.notifications,color: Colors.blue,size: 40,),
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Icon(
+              Icons.notifications,
+              color: Colors.blue,
+              size: 40,
+            ),
           )
         ],
       ),
-      body: Column(
-        children: [
-          Text("Hello")
-        ],
+      body: const Column(
+        children: [Text("Hello")],
       ),
     );
   }
